@@ -10,7 +10,7 @@ class TickTickWinApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tick Tick Win',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primaryColor: Color(0xFFFF9900),
       ),
       home: GameIndexView(),
     );
