@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../models/game.dart';
+import 'game_card.dart';
+
 class GameIndexView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,15 +14,13 @@ class GameIndexView extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          GameCard(Game('Rummy')),
+          GameCard(Game('Pinochle')),
+          GameCard(Game('Ticket to Ride')),
+        ],
       ),
     );
   }
